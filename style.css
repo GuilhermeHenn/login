@@ -1,0 +1,195 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+   font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+   text-decoration: none;
+   color: #7C3AED;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+.flex {
+   display: flex;
+}
+
+.hide {
+   display: none;
+}
+
+#page {
+   height: 100vh;
+}
+
+#page > * {
+   width: 50%;
+}
+
+img {
+   width: 100%;
+   object-fit: cover ;
+}
+
+header img {
+   width: 160px;
+   height: 54px;
+   object-fit: contain;  
+}
+
+#page > div {
+   padding: 40px 112px;
+}
+
+main {
+   margin-top: 114px;
+   max-width: 384px;
+}
+
+.headline {
+   max-width: 350px;
+}
+
+h1 {
+   font-size: 36px;
+   line-height: 55px;
+   color: #1E293B;
+}
+
+h1 + p {
+   margin-top: 16px;
+   color: #475569;
+}
+
+form {
+   margin-top: 40px;
+}
+
+input {
+   width: 100%;
+   background: #FFFFFF;
+   border: 1px solid #E2E8F0;
+   border-radius: 4px;
+   padding: 16px 12px;
+   margin-top: 8px;
+   font-size: 14px;
+   line-height: 21px;
+   color: #1E293B;
+}
+
+input::placeholder {
+   color: #94A3B8;
+}
+
+input:focus,
+input:hover {
+   outline: 0;
+   border: 1px solid #7C3AED;
+}
+
+input:disabled {
+   opacity: 0.35;
+}
+
+.input-wrapper {
+   position: relative;
+}
+
+form .input-wrapper + .input-wrapper {
+   margin-top: 16px;
+}
+
+label {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 21px;
+   color: #1E293B;
+}
+
+.label-wrapper {
+   justify-content: space-between;
+}
+
+.label-wrapper label + a {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 21px;
+}
+
+::-ms-reveal {
+   display: none;
+}
+
+.eye {
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: 55%;
+   right: 5%;
+} 
+
+form button {
+   all: unset;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 16px 24px;
+   background: #7C3AED;
+   border-radius: 4px;
+   width: 100%;
+   font-weight: bold;
+   font-size: 16px;
+   color: #FFFFFF;
+   margin-block: 32px;  
+}
+
+form button:focus {
+   outline: 2px solid #000000;
+   border-radius: 2px;
+}
+
+form button:hover {
+   background: #9F67FF;
+}
+
+.create-account {
+   color: #475569;
+}
+
+.create-account a {
+   font-weight: 700;
+}
+
+@media (max-width: 900px) {
+   #page > * {
+      width: 100%;
+   }
+
+   #page > img {
+      display: none;
+   }
+
+   #page > div {
+      padding: 110px;
+   }
+
+   main {
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 600px) {
+   #page > div {
+      padding: 40px;
+   }
+}
